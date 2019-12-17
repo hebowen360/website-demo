@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    div{
+        display: inline;
+        /*display属性可以把blocktag变成inline， vice verse
+        同时block属性可以设定宽跟高 但是inline不可以
+        但是假如我们把莫个tag设定成inline-block 那他就可以继承高度和宽度 */
+    }
+    /*还有一个就是假如我们给h1设定了inline 但是
+    h1下面的p tag 还是 block所以我们看不到任何变化*/
+    h1{
+        display: inline;
+    }
+    span{
+        display:inline-block;
+        width:100px;
+        height: 100px;
+        background-color: red;
+    }
+     
+    
+    </style>
+</head>
+<body>
+    <!--所有的html的tag都可以简单分成两大类
+    分别是 inline和block
+    所谓的block就比如h1这种tag 他自己存在会独占一行
+    而相反的inline就会和其他元素呆在一起
+    -->
+    <h1>
+        title
+    </h1>
+    <p>
+        <span>
+            span span span span span
+        </span>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.<a herf="#"> Ducimus</a>a maxime, consequuntur vel beatae magnam corporis sint hic aliquid reprehenderit quas enim natus, atque eum autem <strong>praesentium</strong> quia. Suscipit, <em>dolorem</em> facere.
+    </p>
+    <ul>
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+    </ul>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, molestiae explicabo sunt nam cumque iste consequatur cum? Deleniti animi, hic fugiat, quae accusamus repellendus, explicabo similique veritatis dolor nihil beatae.
+    </div>
+    <div>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere blanditiis cum architecto, deserunt itaque inventore rem aliquam dolores temporibus laboriosam veniam explicabo, expedita cupiditate repudiandae, ex reiciendis fugiat iusto et?
+
+    </div>
+</body>
+</html>

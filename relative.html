@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+    ul{
+        width:960;
+        margin:auto;
+    }
+    li{
+        height:100px;
+        width:100px;
+        background-color: #aaa;
+        display: inline-block;
+        margin:10px;
+        text-align: center;
+        font-size: 50px;
+        
+    }
+    .relative-pos{
+        position: relative;
+        /*
+        同时 假如两个物件 一个有 position那么有position的那个物件会盖过另一个
+        假如两个都有position那么 后面的那个会盖住第一个
+
+        但是假如我们想让第一个有position的物件盖过第二有position的
+        我们就需要设定 z-index:1 来让第一个盖过第二个
+        
+        
+        
+        */
+        background-color: red;
+        left: 30px;
+        /*同时 left，right，bottom和top只有在设定了position后才可以用*/
+        opacity: 0.3;
+    }
+    </style>
+</head>
+<body>
+    <!--position:relative
+    这个的作用就是当一个物件 被margin 或者padding 给位移的时候
+    他不会去挤压 其他物件 
+    
+    -->
+    <ul>
+       <li class="relative-pos">1</li>
+       <li>2</li>
+       <li>3</li>
+       <li>4</li>
+       <li>5</li>
+       <li>6</li>
+       <li>7</li>
+       <li>8</li>
+       <li>9</li>
+       <li>10</li>
+       <li>11</li>
+       <li>12</li>
+       <li>13</li>
+       <li>14</li>
+       <li>15</li>
+       <li>16</li>
+       <li>17</li>
+       <li>18</li>
+       <li>19</li>
+       <li>20</li>
+
+
+    </ul>
+    
+</body>
+</html>

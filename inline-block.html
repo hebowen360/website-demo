@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    .menu{
+        background-color: #fa0;
+        text-align: center;
+        font-size: 0;
+    }
+    .menu a{
+        color: #afff;
+        text-decoration: none;
+        background-color: #fff;
+        display:inline-block;
+        padding:10px 20px;
+        font-size: 16px;
+    }
+    /*上面的两个css 我们可以看到font-size先被我们设定成0
+    那就意味着里面没有大小 这么做的原因是由于
+    在最外层的div包住里面的link的时候同时也包住了里面的空白
+    大约4px导致了link和link的area间隔了4px如果我们不希望
+    那就设置最外层的font为0
+    
+    */
+    .menu a:hover{
+        background-color:red;
+        box-shadow: 20px;
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+
+
+
+
+    </div>
+</body>
+</html>

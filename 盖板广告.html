@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>广告练习</title>
+    <style>
+        .ad{
+            height:300px;
+            width:300px;
+            position: fixed;
+            top:0;
+            bottom:0;
+            left:0;
+            right:0;
+            margin:auto;
+            background-color: #aaa;
+
+        }
+        .close{
+            height: 20px;
+            width:18px;
+            background-color: green;
+
+        }
+        .close:hover{
+            background-color:red;
+        }
+    </style>
+</head>
+<body>
+    <div class="ad">
+        <div class="close">
+            X
+        </div>
+
+    </div>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, quae cupiditate debitis expedita totam, delectus placeat nesciunt animi facere, iste enim vero nostrum natus! Fugiat aspernatur veritatis pariatur odio accusamus?</p>
+    <p>Facilis nesciunt iure perspiciatis, mollitia inventore iusto dolor, accusantium nisi explicabo commodi dolores animi? Eaque velit nulla ipsam, amet sit odit officia magnam, in nobis iste deserunt at aliquid nihil.</p>
+    <p>Aperiam inventore, qui at blanditiis voluptas sint minus, harum alias nobis velit possimus facere minima illum id praesentium ratione amet enim obcaecati necessitatibus esse error ex? Magni velit corrupti sequi?</p>
+    <p>Cumque repellat libero officia laboriosam ducimus perspiciatis voluptatem amet? Maxime voluptatum praesentium minus, nobis, autem consequuntur a nemo quo officia aut veritatis, cumque perspiciatis explicabo? Nostrum doloremque assumenda perspiciatis quaerat!</p>
+    <p>Dolorum reprehenderit voluptatibus doloremque error incidunt fuga eos tempore, aperiam debitis reiciendis. Amet, dolore ab, veritatis modi beatae sapiente quam ratione ex quaerat velit eius, nesciunt eligendi sit ut deserunt.</p>
+    <p>Consectetur ipsum fugit quia distinctio alias impedit totam architecto iusto similique nam itaque rerum, veniam voluptatum repellendus et blanditiis facere reiciendis delectus. Doloremque totam, consequuntur ab explicabo tempora aliquid assumenda.</p>
+    <p>Necessitatibus hic vitae debitis sed pariatur temporibus asperiores ullam harum quibusdam praesentium reiciendis cupiditate ipsum unde voluptatum esse beatae nemo voluptas nisi minima odit, at fugiat alias. Eos, repudiandae autem!</p>
+    <p>Esse ut dolorem ad qui necessitatibus accusamus repellat itaque velit! Inventore sed culpa aliquid tenetur blanditiis aspernatur reprehenderit ex est enim hic quasi eos dolor nulla repellendus, et eligendi? Perspiciatis?</p>
+    <p>Blanditiis, repudiandae quaerat consequuntur illo explicabo cupiditate optio, incidunt consequatur soluta iusto reiciendis cumque tempora necessitatibus enim quisquam odio, a perferendis culpa labore obcaecati iste? Doloribus mollitia reiciendis ipsa reprehenderit!</p>
+    <p>Adipisci nisi illum odit hic fugit ipsum omnis inventore tempora sequi tenetur consequatur, quod quisquam repudiandae accusamus alias magni iusto natus. Fuga commodi autem natus dolore eaque laborum alias doloremque.</p>
+    <p>Architecto, totam fugit tenetur deleniti corporis voluptate eligendi, voluptatibus repellat maxime assumenda nobis excepturi delectus earum impedit similique quisquam cupiditate nam veritatis dolorem voluptates a omnis corrupti eaque blanditiis! Aperiam!</p>
+    <p>Ducimus dolor unde explicabo qui maxime dicta, ad cupiditate exercitationem asperiores non ab, praesentium distinctio quasi nam. Quisquam alias iusto numquam. Temporibus, nam. Rem accusamus deserunt nostrum mollitia ex ea.</p>
+    <p>Eaque excepturi, laudantium odio nemo eligendi in. Molestiae ducimus aspernatur sequi, aliquam modi, eum ad, impedit vero ullam iure veritatis provident delectus odio voluptate corporis nihil praesentium consequatur. Officia, quam?</p>
+    <p>Mollitia dolore ipsam dicta, neque, minima necessitatibus quas nulla dolorem repellendus, nemo eum. Itaque facilis labore pariatur ab nobis voluptates atque accusantium, quaerat deserunt voluptas eum laudantium. Tempore, sapiente unde!</p>
+    <p>Quibusdam amet aliquid dolorum culpa, tempore corporis aut nemo eligendi soluta, ea earum at quidem accusantium sed iste voluptate iusto possimus sequi omnis? Hic, nulla architecto fugiat enim officia in?</p>
+    <p>Fugiat cumque, debitis magnam molestias aspernatur beatae repudiandae officiis deleniti nihil nulla sint fugit voluptatibus aut recusandae quam deserunt. Quia consequatur eos perspiciatis beatae aperiam necessitatibus ipsam nemo, magni vero.</p>
+    <p>Officia quos voluptatibus incidunt. Minima porro, vero, laudantium expedita, dolorum sunt illum qui at dolores voluptas aut in minus magnam deleniti enim iusto. Fuga, voluptatum maxime beatae minus quia voluptates!</p>
+    <p>Quibusdam nostrum reiciendis voluptate incidunt, voluptatem eos nam fugiat, laudantium quae id quos accusantium maxime. Nesciunt, harum aperiam architecto ipsa magnam asperiores labore distinctio consequatur voluptatibus dolores placeat mollitia cupiditate.</p>
+    <p>Sapiente ab inventore maxime nisi quia at quisquam ad. Tempore, repudiandae inventore similique error quae aliquam libero ut atque. Commodi explicabo optio neque non placeat voluptas quibusdam itaque harum sint.</p>
+    <p>Quidem illo dicta molestias voluptas. Repellat, omnis magnam ab laudantium minima qui. Perferendis possimus enim voluptate quas consequuntur ad rem expedita at qui veritatis! Perspiciatis accusamus magnam unde quia nobis?</p>
+    <script>
+    var closebtns = document.getElementsByClassName("close");
+    var i;
+
+    for (i = 0; i < closebtns.length; i++) {
+        closebtns[i].addEventListener("click", function() {
+        this.parentElement.style.display = 'none';
+  });
+}
+    
+    </script>
+</body>
+</html>
